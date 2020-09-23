@@ -73,3 +73,8 @@ let step = () => {
 };
 
 step();
+
+document.body.addEventListener('touchmove', function (e) {
+  e.preventDefault();
+}, {passive: false});
+// 阻止浏览器滑动
